@@ -1,73 +1,69 @@
-# Welcome to your Lovable project
+# QueryMind — AI SQL Query Generator
 
-## Project info
+**QueryMind** is a modern, AI-powered web application that instantly converts plain English natural language into optimized SQL queries. It's built to eliminate the need for syntax memorization, helping data analysts, developers, startups, and non-technical founders query their databases with ease.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+![QueryMind Preview](/public/og-image.png)
 
-## How can I edit this code?
+## 🚀 Features
 
-There are several ways of editing your application.
+- **Natural Language to SQL:** Type what you want in plain English, and the AI generates the corresponding SQL query.
+- **Context-Aware Generation:** Optionally provide your database schema (`CREATE TABLE` statements) to get perfectly tailored queries that match your exact table structures.
+- **SQL Explanation & Optimization:** The app doesn't just give you code; it provides step-by-step explanations of the generated SQL and suggests optimizations.
+- **Secure & Custom UX:** Includes a custom right-click context menu and disabled standard browser developer tools for enhanced app security.
+- **Beautiful UI:** A sleek, dark-themed, glassmorphic UI built with Radix Primitives and Tailwind CSS for a premium user experience.
 
-**Use Lovable**
+## 🛠️ Technology Stack
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+- **Frontend Framework:** React 18, Vite, TypeScript
+- **Styling:** Tailwind CSS, Framer Motion
+- **UI Components:** Shadcn UI (Radix UI Primitives), Lucide React
+- **Data Fetching:** TanStack React Query
+- **Backend / AI:** Supabase Edge Functions (invoking the `generate-sql` function)
+- **Deployment:** Ready for Netlify deployment (`netlify.toml` included)
 
-Changes made via Lovable will be committed automatically to this repo.
+## 📦 Getting Started
 
-**Use your preferred IDE**
+### Prerequisites
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- Node.js (v22+)
+- `npm` or `bun`
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Installation
 
-Follow these steps:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Farhans123456/query-mind.git
+   cd query-mind
+   ```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+3. Configure Environment Variables:
+   Set up your Supabase project URL and API keys in your `.env` file for the AI generation to work correctly.
 
-# Step 3: Install the necessary dependencies.
-npm i
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+5. Open your browser and navigate to `http://localhost:8080/`.
+
+## 🏗️ Build & Deployment
+
+To build the project for production:
+
+```bash
+npm run build
 ```
 
-**Edit a file directly in GitHub**
+This project includes a `netlify.toml` file configured to automatically build and deploy via Netlify using `npm run build`.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 👨‍💻 Author
 
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+**Made by Farhan Shaikh**
+- [Email](mailto:f98561965@gmail.com)
+- [LinkedIn](https://www.linkedin.com/in/farhan-shaikh-753551358/)
+- [GitHub](https://github.com/Farhans123456/)
