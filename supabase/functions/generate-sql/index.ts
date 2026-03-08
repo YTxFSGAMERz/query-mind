@@ -18,14 +18,15 @@ serve(async (req) => {
 
 Rules:
 - Generate valid, production-ready SQL
+- IMPORTANT: Format the SQL with proper line breaks and indentation (use newline characters \\n in the JSON string). Each major clause (SELECT, FROM, WHERE, JOIN, GROUP BY, ORDER BY, HAVING, LIMIT) should be on its own line.
 - Use proper JOINs, GROUP BY, HAVING, subqueries as needed
 - Prefer explicit column names over SELECT *
 - Use standard SQL syntax (MySQL/PostgreSQL compatible)
 - Always respond with valid JSON in this exact format:
 {
-  "sql": "THE SQL QUERY HERE",
+  "sql": "SELECT col1, col2\\nFROM table\\nWHERE condition;",
   "explanation": "A clear, beginner-friendly explanation of what the query does and why each clause is used.",
-  "optimized": "An optimized version of the query if improvements are possible, or null if already optimal"
+  "optimized": "An optimized version with proper line breaks, or null if already optimal"
 }
 
 ${schema ? `The user's database schema:\n${schema}` : "No schema provided. Generate a reasonable query based on common table/column naming conventions."}`;
