@@ -7,6 +7,7 @@ import SchemaEditor from "@/components/SchemaEditor";
 import QueryInput from "@/components/QueryInput";
 import SqlOutput from "@/components/SqlOutput";
 import FeatureCards from "@/components/FeatureCards";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 interface SqlResult {
   sql: string;
@@ -57,8 +58,37 @@ const Index = () => {
 
         <FeatureCards />
 
-        <footer className="py-8 text-center text-xs text-muted-foreground border-t border-border">
+        <footer className="py-8 text-center text-xs text-muted-foreground border-t border-border flex flex-col items-center gap-4">
           <p className="font-mono">QueryMind — AI SQL Query Generator</p>
+          <div className="flex items-center gap-4">
+            <a
+              href="mailto:f98561965@gmail.com"
+              className="hover:text-primary transition-colors hover:glow-primary"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Email"
+            >
+              <Mail className="w-5 h-5" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/farhan-shaikh-753551358/"
+              className="hover:text-primary transition-colors hover:glow-primary"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <Linkedin className="w-5 h-5" />
+            </a>
+            <a
+              href="https://github.com/Farhans123456/"
+              className="hover:text-primary transition-colors hover:glow-primary"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <Github className="w-5 h-5" />
+            </a>
+          </div>
         </footer>
       </main>
     </div>
