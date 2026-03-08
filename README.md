@@ -2,7 +2,7 @@
 
 **QueryMind** is a modern, AI-powered web application that instantly converts plain English natural language into optimized SQL queries. It's built to eliminate the need for syntax memorization, helping data analysts, developers, startups, and non-technical founders query their databases with ease.
 
-![QueryMind Preview](/public/og-image.png)
+[![QueryMind Banner](/public/github-banner.png)](https://github.com/Farhans123456/query-mind)
 
 ## 🚀 Features
 
