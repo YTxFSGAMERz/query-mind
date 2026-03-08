@@ -47,6 +47,12 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        "sql-keyword": "hsl(var(--sql-keyword))",
+        "sql-string": "hsl(var(--sql-string))",
+        "sql-number": "hsl(var(--sql-number))",
+        "sql-function": "hsl(var(--sql-function))",
+        "sql-comment": "hsl(var(--sql-comment))",
+        "surface-elevated": "hsl(var(--surface-elevated))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
